@@ -16,15 +16,22 @@ body {
 	background: black;
 	font-size: 36px;
 	padding: 5px;
-	font-family: 'Lobster', cursive;
-	font-weight: 100;
+	font-weight: 700;
 	text-align: center;
 	color: white;
 }
 
 .display {
+	margin: auto;
+  	position: absolute;
+  	top: 0; left: 0; bottom: 0; right: 0
+}
+
+.frame {
 	position: relative;
-	margin: 70px auto;
+	width: 100%;
+	height: 100%;
+	margin-top: 40px;
 	overflow: hidden;
 }
 
@@ -71,5 +78,52 @@ body {
 .twitter-holder {
 	position: absolute;
 	bottom: 10px;
+	left: 10px;
+}
+
+.city {
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Kite One', sans-serif;
+	border: 0px;	
+	border-bottom: 1px solid white;
+	font-size: 36px;
+	background: black;
+	color: white;
+	width: 300px;
+	text-align: center;
+}
+
+.city:focus {
+	outline: none;
+}
+
+.infobox {
+	position: absolute;
+	background: #94CCFF;
+	top: 90px;
+	left: 50%;
+	color: white;
+	font-size: 20px;
+	font-weight: 100;
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.infocontent {
+	position: relative;
+	padding: 12px;
+}
+
+.arrow {
+	position: absolute;
+	border-color: transparent transparent #8BC3F6 transparent;
+	border-style:solid;
+	border-width:15px;
+	width:0;
+	height:0;
+	top: -30px;
 	left: 10px;
 }
